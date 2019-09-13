@@ -1,0 +1,49 @@
+* { box-sizing: border-box; }
+
+.container {
+    width: 720px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: rgba(252,236,252,1);
+}
+
+.card {
+    margin: 1rem;
+    padding: 3rem;
+
+    background-color: navajowhite;
+    box-shadow: 5px 5px 5px pink;
+    border-radius: 50px;
+    line-height: 140%;
+}
+
+.head {
+    font-weight: bold;
+    font-size: 135%;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    color: #444;
+}
+
+.card__footer {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.75rem;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.card__btn {
+    background: rgba(210,255,82,1);
+}
+
+.card__btn:hover {
+    background-color: red;
+}
