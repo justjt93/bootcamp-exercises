@@ -1,0 +1,16 @@
+$red: #11da97;
+$blue: #301425; 
+$trump: #dd76b4;
+
+body {
+    color: $red;
+    background: $blue;
+    margin: 0;
+    padding: 0,2rem;
+}
+
+h1 {
+    color: $red;
+    border: 1px solid $red;
+    background: $trump;
+}

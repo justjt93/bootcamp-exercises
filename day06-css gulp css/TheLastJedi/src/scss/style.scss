@@ -1,0 +1,87 @@
+@import 'other-scss/common.scss';
+
+nav{
+    display: flex;
+    background: #666666;
+
+    a{
+        color: white;
+        margin: 1em;
+        text-decoration: none;
+        font-size: 15px;
+    }
+}
+
+.MegaParent{
+    display: flex;
+    flex-direction: column;
+}
+
+.Bannerimg {
+    background-image: url('../img/welcome.jpg');
+    background-position:center;
+/*     background-repeat: no-repeat,
+    background-size: cover; */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    color: white;
+}
+
+h1, h2 {
+    color: white;
+    margin: 0;
+}
+
+h1{
+    font-size: 5.1rem;
+    margin: 0;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+.Characters {
+    background-image: url('../img/rey-standing.jpg');
+    background-position:center;
+    height: 450px;
+}
+
+.plot{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 50rem;
+    flex-wrap: wrap;
+}
+
+.posterimg {
+    max-width:30%;
+}
+
+.part2text {
+    max-width:70%;
+}
+
+.title {
+    width: 100vw;
+    text-align: center;
+    padding: 2rem;
+}
