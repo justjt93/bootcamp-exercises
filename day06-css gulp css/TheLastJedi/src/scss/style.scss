@@ -1,87 +1,197 @@
 @import 'other-scss/common.scss';
-
-nav{
-    display: flex;
-    background: #666666;
-
-    a{
-        color: white;
-        margin: 1em;
-        text-decoration: none;
-        font-size: 15px;
-    }
-}
-
-.MegaParent{
-    display: flex;
-    flex-direction: column;
-}
-
-.Bannerimg {
-    background-image: url('../img/welcome.jpg');
-    background-position:center;
-/*     background-repeat: no-repeat,
-    background-size: cover; */
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-
-    color: white;
-}
-
-h1, h2 {
-    color: white;
-    margin: 0;
-}
-
-h1{
-    font-size: 5.1rem;
-    margin: 0;
-}
-
-h2{
-    font-size: 1.7rem;
-    margin: 0;
-}
+@import "other-scss/nav-banner.scss"; 
 
 h3 {
     margin: 0;
 }
 
+// All of this relates to PLOT  section
+.plot{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h3 {
+            width: 100vw;
+            text-align: center;
+            padding-bottom: 2rem;
+
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+
+            .posterimg {
+                max-width:30%;
+            }
+            
+            .part2text {
+                max-width:70%;
+            }
+            
+        }
+    }
+ 
+}
+
+
+
+// All of this relates to Characters  section
+
 
 .Characters {
     background-image: url('../img/rey-standing.jpg');
     background-position:center;
-    height: 450px;
-}
-
-.plot{
+    height: 500px;
+    display: flex;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
- 
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    max-width: 50rem;
+    align-items: flex-end;
     flex-wrap: wrap;
+
+    .title{
+        
+        align-self: flex-start;
+        
+    }
+
+    .content{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100vw;
+
+/*         &:nth-child(1),&:nth-child(7) {
+            height: 10px;
+        } */
+        .smallest {
+            height: 5em;
+        }
+        
+        .small {
+            height: 6em;
+        }
+        
+        .normal {
+            height: 8em;
+        }
+        
+        .big {
+            height: 10em;
+        }
+
+        img {
+            border-radius:50%;
+            
+        }
+    }
 }
 
-.posterimg {
-    max-width:30%;
+
+// All of this relates to Ratings  section
+
+
+.Ratings {
+ 
+    background-position:center;
+    height: 450px;
+    display: flex;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    border-bottom: 1.5px solid gray;
+
+    .content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h3{
+            text-align: center;
+        }
+
+        .bigratingbox{
+            display: flex;
+            justify-content: space-around;
+
+
+            width: 100%;
+            height: 100%;
+    
+            .ratingbox1{
+                align-self: flex-end;
+                text-align: center;
+                
+                .bar1{
+                    height: 15rem;
+                    width: 10rem;
+                    background: #A8A8A8;
+                }
+            }
+            
+            .ratingbox2{
+                align-self: flex-end;
+                text-align: center;
+                .bar2{
+                    height: 20rem;
+                    width: 10rem;
+                    background:#A8A8A8;
+                }
+            }
+            
+            .ratingbox3{
+                align-self: flex-end;
+                text-align: center;
+                .bar3{
+                    height: 18rem;
+                    width: 10rem;
+                    background: #A8A8A8;
+                    
+                }
+            }
+           
+        }
+    }
 }
 
-.part2text {
-    max-width:70%;
-}
 
-.title {
-    width: 100vw;
-    text-align: center;
-    padding: 2rem;
+
+// All of this relates to CAST  section
+
+section.cast {
+    display: flex;
+    .image {
+        display: block;
+        position: relative;
+        border: 1px solid orange;
+        
+        img{
+            width: 8rem;
+        }
+        
+        > div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0, 0.5);
+            color: white;
+            padding: 0.5 em;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
 }

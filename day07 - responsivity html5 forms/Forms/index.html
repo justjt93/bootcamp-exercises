@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php">
+    What do you want to do with the product (headphones)?
+    <input type="hidden" name="product_id" value="123456">
+
+    <div class="input">
+        <input type="text" name="greeting" value="Hello, world!">
+    </div>
+
+    <label for="biography_textarea">Write your bio</label>
+    <textarea name="biography" id="biography_textarea" cols="30" rows="10"> Once upon a time ...
+    </textarea>
+<br>
+    <label for="want_newsletter_checkbox">Check this if you would like a newsletter</label>
+    <input type="checkbox" name="want_newsletter" id="want_newsletter_checkbox" value="yes" checked="checked">
+
+<br>
+    <label for="gender_male">Male</label>
+    <input type="radio" name="gender" value="male" id="gender_male" >
+    <label for="gender_male">Female</label>
+    <input type="radio" name="gender" value="female" id="gender_female">
+    <label for="gender_male">Other</label>
+    <input type="radio" name="gender" value="other" id="gender_other">
+
+    <br>
+
+    <select name="nationality" id="">
+        <option value="cz">Czech</option>
+        <option value="sk">Slovakia</option>
+        <option value="me">Montenegrian</option>
+        <option value="pl">Polish</option>
+    </select>
+
+    <br>
+
+    <input type="text" name="personal_info[first_name]" value="Jan" placeholder="First name" />
+<input type="text" name="personal_info[last_name]" value="Django" placeholder="Last name" />
+<input type="text" name="personal_info[address][city]" value="Prague" placeholder="City you live in"/>
+
+
+<br>
+
+    <input type="Submit" name="submit" value="Save">
+
+    <input class="danger" type="Submit" name="submit" value="Delete">
+    </form>
+</body>
+</html> 

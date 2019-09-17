@@ -1,0 +1,46 @@
+nav{
+    display: flex;
+    background: #666666;
+
+    a{
+        color: white;
+        margin: 1em;
+        text-decoration: none;
+        font-size: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.Bannerimg {
+    background-image: url('../img/welcome.jpg');
+    background-position:center;
+/*     background-repeat: no-repeat,
+    background-size: cover; */
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    color: white;
+
+    h1, h2 {
+        color: white;
+        margin: 0;
+    }
+    
+    h1{
+        font-size: 5.1rem;
+        margin: 0;
+    }
+    
+    h2{
+        font-size: 1.7rem;
+        margin: 0;
+    }
+}

@@ -1,0 +1,30 @@
+body{
+    display: flex;
+flex-direction: row;
+}
+
+.input {
+border: 2px solid blue;
+padding: 0.25em;
+border-radius: 0.125em;
+display: flex;
+flex-direction: row;
+}
+
+.input input[type="text"]{
+    border-width: 0;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="submit"] {
+    background: green;
+    color: white;
+    border-width: 0;
+    border-radius: 0.125em;
+    padding: 0.5em 1em;
+}
+
+input[type="submit"].danger {
+    background: red;
+}
