@@ -173,13 +173,43 @@ h3 {
 
 section.cast {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    .hamillbox{
+        display: flex;
+        flex-direction: row;
+
+        img{
+            width: 15rem;
+            padding: 2em;
+        }
+    }
+
+    .imagesection{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        
+        padding-bottom: 2em;
+    }    
+
     .image {
         display: block;
         position: relative;
         border: 1px solid orange;
         
         img{
-            width: 8rem;
+            width: 7rem;
         }
         
         > div {
