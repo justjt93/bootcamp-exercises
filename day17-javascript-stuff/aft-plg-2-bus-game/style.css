@@ -1,0 +1,80 @@
+body{
+    padding: 20px;
+    overflow: hidden;
+    
+}
+.controlPanel{
+    background: blue;
+    color: white;
+}
+.board{
+    border: 2px solid black;
+    height: 620px;
+    width: 100%;
+    margin: 0;
+
+}
+@keyframes myanimation1 {
+    0%   {transform: translate(0px, 0px);}
+    25%  {transform: translate(30px, 30px);}
+    50%  {transform: translate(200px, -50px);}
+    75%  {transform: translate(40px, 50px);}
+    100% {transform: translate(0px, 0px);}
+  }
+
+  @keyframes myanimation2 {
+    0%   {transform: translate(0px, 0px);}
+    25%  {transform: translate(30px, 30px);}
+    50%  {transform: translate(200px, -50px);}
+    75%  {transform: translate(40px, 50px);}
+    100% {transform: translate(0px, 0px);}
+  }
+
+  @keyframes myanimation3 {
+    0%   {transform: translate(0px, 0px);}
+    25%  {transform: translate(100px, 100px);}
+    50%  {transform: translate(-50px, -50px);}
+    75%  {transform: translate(120px, -50px);}
+    100% {transform: translate(0px, 0px);}
+  }
+
+.chip1{
+    display: block;
+    position: absolute;
+    background: rgb(255, 0, 242);
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+
+    animation-duration: 3s;
+    transition-duration: 6s;
+    animation: myanimation1 4s infinite;
+
+}
+
+.chip2{
+    display: block;
+    position: absolute;
+    background: rgb(238, 255, 0);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50%;
+
+    animation-duration: 3s;
+    transition-duration: 6s;
+    animation: myanimation2 3s infinite;
+}
+
+.chip3{
+    display: block;
+    position: absolute;
+    background: rgb(0, 255, 255);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 50%;
+
+    animation-duration: 3s;
+    transition-duration: 6s;
+    animation: myanimation3 2s infinite;
+
+}

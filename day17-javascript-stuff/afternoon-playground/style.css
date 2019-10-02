@@ -1,0 +1,9 @@
+.product-section{
+    background: gray;
+}
+
+span{
+    margin-left: 5px;
+    background: rgb(122, 241, 122);
+    padding: 1px;
+}

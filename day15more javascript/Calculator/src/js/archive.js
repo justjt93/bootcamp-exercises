@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultField.innerText = 0;
     op = 0;
   };
-  // execute the equal operation
+    // execute the equal operation
   const equalOP = () => {
     if (op === 0) {
       resultField.innerText = inputField.value;
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       resultField.innerText = op(input, result);
     }
   };
-  // Calculate plusOP result and update it to the result text field
+    // Calculate plusOP result and update it to the result text field
   const plusOP = () => {
     const input = inputField.value;
     const result = resultField.innerText;
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
       op = minus;
     } else {
       equalOP();
-
       op = minus;
     }
   };
@@ -66,16 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
     resultField.innerText = divide(input, result);
   };
 
-  // // Ultimate OP - WHY IT DOES NOT WORK
-  // const executeOperation = (nameOfOperation) => {
-  //   const input = inputField.value;
-  //   const result = resultField.innerText;
-  //   console.log(nameOfOperation);
-  //   op = nameOfOperation;
-  //   console.log(op);
-  //   resultField.innerText = nameOfOperation(input, result);
-  // };
-
   // Click to run add operation
   document.querySelector('#btn-plus').addEventListener('click', plusOP);
 
@@ -88,9 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Click to run mins operation
   document.querySelector('#btn-minus').addEventListener('click', minusOP);
 
-  // Click to run multiply operation
-  document.querySelector('#btn-divide').addEventListener('click', multiplyOP);
+  // Click to run equal operation
+  document.querySelector('#btn-multiply').addEventListener('click', multiplyOP);
 
-  // Click to run divide operation
+  // Click to run mins operation
   document.querySelector('#btn-divide').addEventListener('click', divideOP);
 });
+
+
+//   working version of calculator with divide, multiply, equal, plus, minus
