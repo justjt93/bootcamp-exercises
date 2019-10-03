@@ -1,0 +1,11 @@
+body{
+    margin: 0% 20%;
+}
+
+.book-list{
+    background: lightblue;
+    color: black;
+    font-weight: 900;
+    height: 50vh;
+    width: 40vw;
+}

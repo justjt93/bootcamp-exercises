@@ -38,23 +38,28 @@ class Game {
         }
 
     throwChips() {    
+        this.resetGame();
         const userInput = document.querySelector('#inputChips');
         const userInputChips = parseInt(userInput.value);
         this.score = 0;
         console.log(userInputChips);
         this.addChips(userInputChips);
-            }
+        // WHY THE ABOVE DOES NOT WORK? HOW IS IT NOT A FUNCTION?
+                }
 
 }
 
-const startBtn = document.querySelector('#startGame');
-const resetBtn = document.querySelector('#resetGame');
-const scoreKeeper = document.querySelector('#scoreKeeper');
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const startBtn = document.querySelector('#startGame');
+const resetBtn = document.querySelector('#resetGame');
+const scoreKeeper = document.querySelector('#scoreKeeper');
     const game20 = new Game();
-    game20.addChips(40);
-    startBtn.addEventListener('click', (game20.throwChips));
+    game20.addChips(15);
+    startBtn.addEventListener('click', () => {
+        game20.throwChips()
+    } );
     resetBtn.addEventListener('click', (game20.resetGame));
   });

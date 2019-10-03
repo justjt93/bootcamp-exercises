@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.app {
+  width: 600px;
+  margin: 100px auto;
+  text-emphasis: center;
+  display: flex;
+  flex-direction: column;
+  background: lightgoldenrodyellow;
+
+}
+
+.timerWindow{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.label {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.midSection{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.resetBtn, .startStopBtn {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.downArrow, .upArrow{
+  font-size: 28px;
+  width: 25%;
+  border-radius: 50%;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  align-self: center;
+  margin-bottom: 5px;
+  margin-top: 5px;  
+
+}
+
+.timerDigit {
+  padding: 40px;
+  font-size: 28px;
+  border: solid red;
+  border-radius: 50%;
+}
+
