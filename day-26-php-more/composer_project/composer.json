@@ -1,0 +1,12 @@
+{
+    "name": "jt/composer_project",
+    "authors": [
+        {
+            "name": "JT",
+            "email": "jakubtalacko@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
