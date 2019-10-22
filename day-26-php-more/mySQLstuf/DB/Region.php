@@ -35,4 +35,14 @@ class Region
 
         update($query, [$this->name, $this->slug, $this->id]);
     }
+
+    //     public function delete($id)
+    //     {
+    //         $query = 'DELETE
+    //         FROM `region`
+    //         WHERE `id` = ?;
+    //         ';
+
+    // $this->id
+    //     }
 }
