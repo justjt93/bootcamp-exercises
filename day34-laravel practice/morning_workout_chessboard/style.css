@@ -1,0 +1,20 @@
+.board .row {
+    width: 24em;
+    display: flex;
+}
+.board .row > div {
+    width: 3em;
+    height: 3em;
+}
+.board .white {
+    background-color: #c2c2c2;
+}
+.board .black {
+    background-color: #525252;
+}
+
+.board .king{
+    background-image: url("http://classes.codingbootcamp.cz/assets/classes/33/pieces/whites/king.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    )
